@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/style.css">
+
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/custom.js"></script>
 </head>
 
 <body>
@@ -20,8 +23,24 @@
             </h1>
             <nav class="gnb">
                 <ul>
-                    <li><a href="">기업정보</a></li>
-                    <li><a href="">솔루션</a></li>
+                    <li>
+                        <a href="">기업정보</a>
+                        <ul class="sub">
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">회사소개</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">솔루션</a>
+                        <ul class="sub">
+                            <li><a href="#">회사솔루션</a></li>
+                            <li><a href="#">회사솔루션</a></li>
+                            <li><a href="#">회사솔루션</a></li>
+                            <li><a href="#">회사솔루션</a></li>
+                        </ul>
+                    </li>
                     <li><a href="">서비스</a></li>
                     <li><a href="">혁신기술</a></li>
                 </ul>
@@ -29,6 +48,9 @@
         </div>
     </header>
     <main>
+        <section class="main_visual">
+            slide
+        </section>
         <section class="main_content">
             <h2>사람과 사람을 연결하는 종합 승강기 기업</h2>
             <p>최고의 기술과 서비스로 편리하고 풍요로운 세상을 만들어갑니다.</p>
@@ -69,7 +91,28 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="inner">
+            <div class="f_logo">
+                <img src="./images/logo02.png" alt="">
+            </div>
+            <div class="copy">
+                <address>&copy; lee.</address>
+            </div>
+            <div class="sns">
+                <a href="http://naver.com" target="_blank">
+                    <i class="xi-naver"></i>
+                </a>
+                <a href="#" target="_blank">
+                    <i class="xi-kakaotalk"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <button class="to_top">
+        <i class="xi-arrow-up"></i>
+    </button>
 </body>
 
 </html>
