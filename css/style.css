@@ -63,14 +63,24 @@
 
 
 .main_visual {
-    position: relative;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
     background: #333;
     color: #fff;
+}
+
+.main_visual .itm {
+    height: calc(100vh - 120px);
+}
+
+.main_visual .itm01 {
+    background: url(../images/visual01.jpg) no-repeat center center/cover;
+}
+
+.main_visual .itm02 {
+    background: url(../images/visual02.jpg) no-repeat center center/cover;
+}
+
+.main_visual .itm03 {
+    background: url(../images/visual03.jpg) no-repeat center center/cover;
 }
 
 .main_content {
