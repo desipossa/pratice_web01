@@ -63,11 +63,13 @@
 
 
 .main_visual {
+    position: relative;
     background: #333;
     color: #fff;
 }
 
 .main_visual .itm {
+    position: relative;
     height: calc(100vh - 120px);
 }
 
@@ -81,6 +83,68 @@
 
 .main_visual .itm03 {
     background: url(../images/visual03.jpg) no-repeat center center/cover;
+}
+
+.main_visual .itm .txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    max-width: 1170px;
+    width: 100%;
+}
+
+.main_visual .itm .txt p {
+    font-size: 40px;
+    font-weight: 900;
+
+    line-height: 48px;
+    text-shadow: 0 0 2px #000;
+
+    margin-bottom: 24px;
+}
+
+.main_visual .lnk {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100%, -50%);
+
+    margin-left: calc(1170px / 2);
+}
+
+.main_visual .lnk li {
+    position: relative;
+    line-height: 24px;
+    text-align: right;
+    padding-right: 40px;
+}
+
+.main_visual .lnk li span {
+    color: transparent;
+}
+
+.main_visual .lnk li.on span {
+    color: #fff;
+}
+
+.main_visual .lnk li::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+
+    transform: translate(0, -50%);
+
+    width: 16px;
+    height: 16px;
+    border: 1px solid #fff;
+}
+
+.main_visual .lnk li.on::after {
+    background: #fff;
 }
 
 .main_content {

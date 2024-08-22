@@ -11,6 +11,12 @@ $(function () {
         // dots: true,
         autoplay: true,
         pauseOnHover: false,
-        //useTransform: false
+        useTransform: false
     });
+
+    $('.main_visual_slide').on('afterChange', function (e, s, c) {
+        $('.main_visual .lnk li').removeClass('on');
+        $('.main_visual .lnk li').eq(c).addClass('on')
+    });
+
 })
