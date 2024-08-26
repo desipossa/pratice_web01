@@ -392,6 +392,28 @@
     margin: 0 15px;
 }
 
+.main_produt .main_product_slide .slick-dots {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 24px;
+}
+
+.main_produt .main_product_slide .slick-dots li button {
+    width: 20px;
+    height: 20px;
+    background: #333;
+    color: #fff;
+
+    border: none;
+    font-size: 12px;
+    border-radius: 50%;
+}
+
+.main_produt .main_product_slide .slick-dots li.slick-active button {
+    background: #008850;
+}
+
 .footer {
     background: #f9f9f9;
 }
@@ -423,6 +445,12 @@
     background: #333;
     color: #fff;
     border-radius: 50%;
+}
+
+.footer .inner .f_lnk #flnk {
+    background: #008850;
+    color: #fff;
+    padding: 0 16px;
 }
 
 .to_top {

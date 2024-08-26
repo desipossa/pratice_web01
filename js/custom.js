@@ -39,6 +39,19 @@ $(function () {
 
 $(function () {
     $('.main_product_slide').slick({
+        arrows: false,
+        dots: true,
         slidesToShow: 4,
     });
+});
+
+//패밀리링크
+
+$(function () {
+    $('#flnk').on('change', function () {
+        const lnk = $(this).val();
+        if (lnk) {
+            window.open(lnk)
+        }
+    })
 })
