@@ -26,6 +26,8 @@
     line-height: 120px;
     font-size: 18px;
     font-weight: 500;
+
+    white-space: nowrap;
 }
 
 
@@ -110,9 +112,11 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-100%, -50%);
+    transform: translate(-50%, -50%);
 
-    margin-left: calc(1170px / 2);
+    max-width: 1170px;
+    width: 100%;
+
 }
 
 .main_visual .lnk li {
@@ -147,6 +151,101 @@
     background: #fff;
 }
 
+.main_visual .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%) rotate(-45deg);
+
+    border: none;
+    background: transparent;
+    font-size: 0;
+
+    width: 80px;
+    height: 80px;
+
+
+
+}
+
+.main_visual .slick-prev {
+    margin-left: -700px;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+}
+
+.main_visual .slick-next {
+    margin-left: 700px;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+
+.main_visual .slick-dots {
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    display: flex;
+    gap: 4px;
+    transform: translate(-50%, 0);
+}
+
+.main_visual .slick-dots li button {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+
+    border: none;
+    background: #333;
+    color: #fff;
+
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.main_visual .slick-dots li.slick-active button {
+    background: #008850;
+}
+
+.main_visual .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    max-width: 1400px;
+    width: 100%;
+}
+
+.main_visual .arrows button {
+    position: absolute;
+    top: 0;
+    transform: translate(0, -50%);
+
+    border: none;
+    background: transparent;
+
+    cursor: pointer;
+}
+
+.main_visual .arrows .prev {
+    left: 0;
+}
+
+.main_visual .arrows .next {
+    right: 0;
+}
+
+.main_visual .arrows button i {
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.25);
+
+    font-size: 32px;
+    color: #fff;
+
+    border-radius: 50%;
+}
+
 .main_content {
     padding: 120px 0;
 }
@@ -169,6 +268,7 @@
 
 .main_content .inner {
     display: flex;
+    gap: 30px;
 }
 
 .main_content .inner .itm {
@@ -234,6 +334,62 @@
 
 .main_content .inner .itm:hover img {
     transform: scale(1.1);
+}
+
+.main_banner {
+    position: relative;
+    height: 400px;
+    background: url(../images/visual01.jpg) no-repeat fixed center center/cover;
+}
+
+.main_banner .inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+}
+
+.main_banner .inner h2 {
+    margin-bottom: 24px;
+    font-size: 32px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.main_banner .inner p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+}
+
+.main_produt {
+    padding: 120px 0;
+}
+
+.main_produt h2 {
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.main_produt p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.main_produt .main_product_slide {
+    margin: 0 -15px;
+}
+
+.main_produt .main_product_slide .itm {
+    margin: 0 15px;
 }
 
 .footer {
