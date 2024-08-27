@@ -414,31 +414,98 @@
     background: #008850;
 }
 
+.main_promotion {
+    padding: 120px 0;
+    background: #f9f9f9;
+}
+
+.main_promotion .inner {
+    display: flex;
+    gap: 30px;
+}
+
+.main_promotion .inner>* {
+    flex: 1;
+}
+
+.main_promotion .left .tab_menu {
+    display: flex;
+}
+
+.main_promotion .left .tab_menu li {
+    border: 1px solid tomato;
+}
+
+.main_promotion .left .tab_menu li.on {
+    border: 1px solid #333;
+}
+
+.main_promotion .left .tab_content .itm {
+    height: 0;
+    overflow: hidden;
+}
+
+.main_promotion .left .tab_content .itm.on {
+    height: auto;
+}
+
+.main_promotion .right .u_box {
+    position: relative;
+    padding-bottom: 56.25%;
+    background: tomato;
+}
+
+.main_promotion .right .u_box iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
 .footer {
     background: #f9f9f9;
 }
 
-.footer .inner {
+.footer .ft {
+    border-top: 1px solid #ddd;
+}
+
+.footer .ft .inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+
+    height: 80px;
 }
 
-.footer .inner .f_logo img {
-    filter: grayscale(1);
+.footer .ft .customer {
+    display: flex;
+    gap: 40px;
 }
 
-.footer .inner .copy address {
-    font-style: normal;
+.footer .ft .customer li {
+    position: relative;
 }
 
-.footer .inner .sns {
+.footer .ft .customer li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 8px;
+    background: #333;
+}
+
+.footer .ft .sns {
     display: flex;
     gap: 8px;
 }
 
-.footer .inner .sns i {
+.footer .ft .sns i {
     display: inline-block;
     font-size: 24px;
     padding: 8px;
@@ -447,7 +514,30 @@
     border-radius: 50%;
 }
 
-.footer .inner .f_lnk #flnk {
+
+.footer .fb {
+    border-top: 1px solid #ddd;
+}
+
+
+.footer .fb .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 80px;
+}
+
+.footer .fb .f_logo img {
+    filter: grayscale(1);
+}
+
+.footer .fb .copy address {
+    font-style: normal;
+}
+
+
+.footer .fb .f_lnk #flnk {
     background: #008850;
     color: #fff;
     padding: 0 16px;
