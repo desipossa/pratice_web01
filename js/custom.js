@@ -61,7 +61,7 @@ $(function () {
 $(function () {
     $('.main_promotion .left .tab_menu button').on('click', function () {
         let idx = $(this).parent().index();
-        console.log(idx);
+
         $('.main_promotion .left .tab_content .itm')
             .eq(idx)
             .addClass('on')

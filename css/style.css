@@ -421,6 +421,7 @@
 
 .main_promotion .inner {
     display: flex;
+    align-items: center;
     gap: 30px;
 }
 
@@ -430,14 +431,25 @@
 
 .main_promotion .left .tab_menu {
     display: flex;
+    gap: 4px;
+    margin-bottom: 16px;
+    height: 48px;
 }
 
 .main_promotion .left .tab_menu li {
-    border: 1px solid tomato;
+    border: 1px solid #ddd;
+    background: #fff;
 }
 
 .main_promotion .left .tab_menu li.on {
-    border: 1px solid #333;
+    border: 1px solid #008850;
+}
+
+.main_promotion .left .tab_menu li button {
+    border: none;
+    padding: 0 24px;
+    height: 46px;
+    background: transparent;
 }
 
 .main_promotion .left .tab_content .itm {
